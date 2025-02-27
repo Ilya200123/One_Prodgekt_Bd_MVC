@@ -19,8 +19,5 @@ public class Main {
             throw new RuntimeException(e);
         }
         // реализуйте алгоритм здесь
-
     }
-
-
 }

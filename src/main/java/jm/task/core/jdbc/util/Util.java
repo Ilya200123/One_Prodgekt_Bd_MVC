@@ -12,7 +12,7 @@ public class Util {
     static  final  String username = "root";
     static  final  String password = "root";
 
-    public static Connection getConnection() throws SQLException {
+    public static Connection getConnection() {
 
         Connection conn = null;
 
@@ -22,13 +22,9 @@ public class Util {
             return conn;
         } catch (SQLException e) {
             System.out.println("Соединение разорвано");
-            throw new SQLException("Ошибка подключения к базе данных", e);
         }
 
-
-        // реализуйте алгоритм здесь
-
-
+        return conn;
     }
     // реализуйте настройку соеденения с БД
 }
