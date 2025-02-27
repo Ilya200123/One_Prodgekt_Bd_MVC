@@ -11,7 +11,6 @@ import java.sql.SQLException;
 public class Main {
 
     public static void main(String[] args) {
-        Util util = new Util();
-        util.getConnection();
+        Util.getConnection();
     }
 }
